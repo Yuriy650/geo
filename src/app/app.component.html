@@ -1,0 +1,107 @@
+<div class="app-container">
+  <div class="app-container__body">
+    <app-form-ip
+    (onNewIp)="updateIp($event)"
+    ></app-form-ip>
+    <div class="content-container" *ngFor="let ipData of ipData$|async" >
+                <ul class="content-container__list" >
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>ip: <span class="content-container__string">{{ipData.ip}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>version:<span class="content-container__string">{{ipData.version}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>city: <span class="content-container__string">{{ipData.city}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>region: <span class="content-container__string">{{ipData.region}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>region_code: <span class="content-container__string">{{ipData.region_code}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>country_code: <span class="content-container__string">{{ipData.country_code}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>country_name: <span class="content-container__string">{{ipData.country_name}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>country_capital: <span class="content-container__string">{{ipData.country_capital}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>country_tld: <span class="content-container__string">{{ipData.country_tld}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>continent_code: <span class="content-container__string">{{ipData.continent_code}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-boolean">tf</button>
+                        <p>in_eu: <span class="content-container__boolean">{{ipData.in_eu}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>postal: <span class="content-container__string">{{ipData.postal}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-number">#</button>
+                        <p>latitude: <span class="content-container__number">{{ipData.latitude}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-number">#</button>
+                        <p>longitude: <span class="content-container__number">{{ipData.longitude}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>timezone: <span class="content-container__string">{{ipData.timezone}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>utc_offset: <span class="content-container__string">{{ipData.utc_offset}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>country_calling_code: <span class="content-container__string">{{ipData.country_calling_code}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>currency: <span class="content-container__string">{{ipData.currency}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>currency_name: <span class="content-container__string">{{ipData.currency_name}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>languages: <span class="content-container__string">{{ipData.languages}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-number">#</button>
+                        <p>country_area: <span class="content-container__number">{{ipData.country_area}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-number">#</button>
+                        <p>country_population: <span class="content-container__number">{{ipData.country_population}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>asn: <span class="content-container__string">{{ipData.asn}}</span></p>
+                    </li>
+                    <li>
+                        <button class="content-container__btn-string">“</button>
+                        <p>org: <span class="content-container__string">{{ipData.org}}</span></p>
+                    </li>
+                </ul>
+    </div>
+  </div>
+</div>

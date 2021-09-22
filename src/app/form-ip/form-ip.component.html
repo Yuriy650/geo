@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="container__form-title">
+    <div class="container__image"> </div>
+    <p class="container__title">Find My IP</p>
+  </div>
+  <form class="form-items">
+    <input
+      type="text"
+      class="container__form-input"
+      placeholder="IP"
+      name="comment"
+      [(ngModel)]="ip"
+    />
+    <button type="button" class="container__form-btn" (click)="handlerOnClick()"
+          >Search
+    </button>
+  </form>
+</div>
